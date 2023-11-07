@@ -72,8 +72,8 @@ curl -sL "$FILES_URL_PREFIX/xray_config.json" -o "$DATA_DIR/xray_config.json"
 colorized_echo green "File saved in $DATA_DIR/xray_config.json"
 
 colorized_echo blue "Installing caddy"
-wget https://github.com/caddyserver/caddy/releases/download/v2.6.4/caddy_2.6.4_linux_amd64.deb
-dpkg -i caddy_2.6.4_linux_amd64.deb
+wget https://github.com/caddyserver/caddy/releases/download/v2.7.5/caddy_2.7.5_linux_amd64.deb
+dpkg -i caddy_2.7.5_linux_amd64.deb
 rm -rf /etc/caddy/Caddyfile
 cat << EOF | sudo tee "/etc/caddy/Caddyfile"
 {
